@@ -1,81 +1,87 @@
-body {  
+body {
     box-sizing: border-box;
     margin: 0;
-    background-color:antiquewhite;
+    background-color: #f0f0f0; 
 }
 
-header {
+.encabezado {
     position: fixed;
-    background-color: wheat;
-    color:violet;
+    background-color: #076af0;
     top: 0;
     left: 0;
     height: 100px;
     width: 100%;
-    text-align: center;
-    
-      
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{ 
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 100px;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.nav-menu-link:hover{
+   background-color: #024070; 
+   color: white;
+   transition: background-color 0.5s; 
 }
 
 aside {
     position: fixed;
-    background-color: violet;
-    color:black;
+    background-color: #e6e6fa; 
+    color: black;
     top: 100px;
     left: 0;
     bottom: 20px;
     width: 20%;
-   
-      
 }
 
 section {
     position: fixed;
     overflow-y: scroll;
     background-color: white;
-    color:black;
+    color: black;
     top: 100px;
     left: 20%;
     bottom: 20px;
     width: 80%;
-   
-      
 }
 
 footer {
     position: fixed;
     text-align: center;
-    background-color: black;
+    background-color: #333; 
     color: whitesmoke;
-    left: 0%;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     height: 20px;
     width: 80%;
-   
-      
-}
-
-
-
-
-nav a {
-    text-decoration: none;
-    background-color: cadetblue;
-    background-color: white;
-}
-
-nav a:hover{
-    background-color: blue;
-    color: yellow;
-    
-}
-
-tr:nth-child(odd){
-    background-color: yellow;
-    background-color: pink;
-}
-
-tr:nth-child(even){
-    background-color: pink ;
-    background-color: pink;
 }
